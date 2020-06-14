@@ -1,7 +1,7 @@
 const { rating } = require("../다형성_2");
 
 test("rating", () => {
-  const voyage = { zone: "서인도", length: 10 };
+  const voyage = { zone: "중국", length: 10 };
   const history = [
     { zone: "동인도", profit: 5 },
     { zone: "서인도", profit: 15 },
@@ -10,5 +10,5 @@ test("rating", () => {
   ];
   const myRating = rating(voyage, history);
 
-  expect(myRating).toBe("B");
+  expect(myRating).toBe("A");
 });
